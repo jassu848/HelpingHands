@@ -1,0 +1,303 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+:root{
+    --navbar-height:50px;
+}
+.buttons{
+    position: relative;
+    
+    left: 1300px;
+}
+.btnlog{
+    padding: 16px;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+
+}
+.btnlog:hover{
+   background-color: rgb(123, 145, 144);
+   color: black;
+}
+#navbar{
+    display: flex;
+    align-items:center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#logo{
+    margin: 35px 45px;
+}
+#logo img{
+    height: 58px;
+    margin: -25px 5px
+}
+#navbar{
+   
+    position: relative;
+   
+    opacity: 10;
+
+}
+#navbar ul{
+    display: flex; 
+    text-align: center;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+     z-index: -100; 
+    opacity: 10;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+/* Login and reister */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background:url(img/bg.jpg) ;
+    background-repeat: no-repeat;
+   
+    background-size:cover;
+    height: 120%;
+    width: 120%;
+    z-index: -1;
+    opacity: 0.9;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: auto;
+}
+#home p{
+    color: rgb(105, 81, 81);
+    text-align: center;
+    font-size: 1.4rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: auto;
+}
+/* Mission section */
+#mission{
+    margin: 35px;
+    display: flex;
+}
+#mission .box{
+    /* border: 2px solid brown; */
+    position: relative;
+    top: 496px;
+    left: 0px;
+    padding: 24px;
+    margin: 12px 19px;
+    border-radius: 20px;
+    background-color: rgb(239 231 199);
+    text-align: center;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#mission .box h2{
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.primarycenter{
+    position: relative;
+    font-size: 60px;
+    top:254px;
+    
+    font-family: 'Baloo Bhai 2', cursive;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+}
+#mission .box img{
+    display: block;
+    height:200px;
+    margin: auto;
+}
+#rangeValue1 {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 4em;
+    color: rgb(63, 78, 73);
+    font-weight: 400;
+  }
+  #rangeValue2 {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 4em;
+    color: rgb(63, 78, 73);
+    font-weight: 400;
+  }
+  #range3 {
+    position: relative;
+  top:32px;
+  bottom: 30px;
+padding-left: 47px;
+padding-right: 7px;
+padding-top: 18px;
+    display: block;
+    border: none;
+    text-align: right;
+    font-size: 1.4rem;
+    color: rgb(63, 78, 73);
+    font-weight: 100;
+   
+        -moz-appearance: textfield;
+    
+  }
+  .range {
+    width: 400px;
+    height: 15px;
+    -webkit-appearance: none;
+    background: rgb(1, 82, 64);
+    outline: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 1);
+  }
+  .range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00fd0a;
+    cursor: pointer;
+    border: 4px solid #333;
+    box-shadow: -407px 0 0 400px #00fd0a;
+  }
+
+.btnSubmit {
+   
+   
+    width: 50%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+}
+.btnSubmit {
+    font-weight: 600;
+    color: #fff;
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(0, 255, 149);
+}
+
+.btnSubmit:hover {
+    font-weight: 600;
+    color: rgb(0, 255, 149);
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+}
+.btnSubmit::after{
+    font-weight: 600;
+    color: #501552;
+    font-size: 13px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+}
+#btn3{
+   
+    position: relative;
+    top: 63px;
+    width: 65%;
+    border-radius: 1rem;
+    padding: 3.5%;
+    border: none;
+    cursor: pointer;
+} 
+#d{
+   
+    position: relative;
+right: -151px;
+}
+#d p{
+    font-size: 2rem;
+}
+
+#mission .box button{
+    margin-top: 6px;
+    font-size: 2rem;
+    height: 67px;
+    width: 231px;
+    border-radius: 22px;
+    padding: 9px;
+    top: 21px;
+    color: white;
+    background-color: rgb(0, 255, 213);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#mission .box .pl{
+    
+    margin-top: 145px;
+}
+.pl h2{
+    position: relative;
+    top: 489px;
+    color: blue;
+}
+.pl button{
+    position: relative;
+    top:510px;
+    font-size: 1.2rem;
+    height: 67px;
+    width: 231px;
+    border-radius: 22px;
+    padding: 9px;
+    
+    color: white;
+    background-color: rgb(0, 255, 149);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.pl button:hover{
+    cursor: pointer;
+    position: relative;
+    top:510px;
+    font-size: 1.2rem;
+    height: 67px;
+    width: 231px;
+    border-radius: 22px;
+    padding: 9px;
+    
+    color: rgb(0, 255, 149);
+    background-color: rgb(130, 212, 245);
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.pl p{
+    position: relative;
+    top:500px;
+}
